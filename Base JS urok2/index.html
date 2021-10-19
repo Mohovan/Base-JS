@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- <style>
+    body {
+      margin-left: 20px;
+    }
+  </style> -->
+  <title>Base JS Урок №2</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Задание 1</h2>
+        <p>Дан код: <br>
+          var a = 1, b = 1, c, d; <br>
+          c = ++a; alert(c); // 2 <br>
+          d = b++; alert(d); // 1 <br>
+          c = (2+ ++a); alert(c); // 5 <br>
+          d = (2+ b++); alert(d); // 4 <br>
+          alert(a); // 3 <br>
+          alert(b); // 3 <br>
+          <br>
+          Почему код даёт именно такие результаты?
+        </p>
+        <p>
+          <b>Ответ:</b> <br>
+          - сначала увеличивается a, потом переходит в c <br>
+          - потом идет переход в d, потом увеличение b <br>
+          - сначала увеличивается a, потом идет сложение и потом присваивание <br>
+          - сначала идет сложение, потом увеличивается b, потом присваивается результат сложения (2+2) в d <br>
+          - в итоге и a и b увеличивались 2 раза каждый и результат одинаков 3 и 3
+        </p>
+      </div>
+      <div class="col">
+        <h2>Задание 2</h2>
+        <p>
+          Чему будет равен x в примере ниже? <br>
+          <br>
+          var a = 2; <br>
+          var x = 1 + (a *= 2);
+        </p>
+        <p>
+          <b>Ответ:</b> <br>
+          x = 5 <br>
+          Сначала идет умножение (2 * 2), получается 4, переходит в переменную a, затем результат умножения
+          добавляется к 1 и получается 5, что и переходит в x.
+        </p>
+      </div>
+    </div>
+    <main>
+      <div class="page">
+        <h2>Задания под номерами №3, 4, 5, 6, 8*</h2>
+        <div class="block">
+          <button id="peremen" class="btn btn-outline-success">Задание №3 объявить две целочисленные
+            переменные — a и b</button><br><br>
+          <button id="promejutok" class="btn btn-outline-success">Задание №4 вывод чисел в промежутке
+            0...15</button><br><br>
+          <button id="forOperation" class="btn btn-outline-success">Задание №5 Четрые арифметические
+            функции</button><br><br>
+          <button id="parametrs" class="btn btn-outline-success">Задание №6 Функция с тремя параметрами</button><br><br>
+          <button id="stepen" class="btn btn-outline-success">Задание №8* Функция возведения числа в
+            степень</button><br><br>
+
+        </div><br>
+        <div class="alert alert-info" role="alert">
+          <p class="text">Здесь будут выводиться результаты вычислений</p>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <script src="urok2.js"></script>
+</body>
+
+</html>
